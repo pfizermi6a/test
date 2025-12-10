@@ -12,7 +12,6 @@ import static browser.Config.START_URL;
 
 public class testMainPage {
     private WebDriver driver;
-    private WebElement element;
     private MainPage mainPage;
 
     @BeforeTest
