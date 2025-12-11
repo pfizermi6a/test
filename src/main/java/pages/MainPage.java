@@ -58,6 +58,7 @@ public class MainPage extends BasePage {
         driver.findElement(submit).click();
     }
 
+    //5
     /*public boolean isGenderMaleSelected(){
         return driver.findElement(radioButtonLocator).isSelected();
     };
