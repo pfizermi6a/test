@@ -58,6 +58,10 @@ public class TestMainPage {
     @Test
     public void step_5(){
         mainPage.clickSubmit();
+        WebElement formSubmit = driver.findElement(By.xpath("/html[@class='h-100']/body[@class='d-flex flex-column h-100']/main[@class='flex-shrink-2']/div[@class='container']/div[@class='row'][1]/div[@class='col-12']/h1[@class='display-6']"));
+        WebElement formReceived = driver.findElement(By.xpath("//p[@id='message']"));
+        Assert.assertEquals(formSubmit.getText(), "Form submitted");
+        Assert.assertEquals(formReceived.getText(), "Received!");
     }
 
     @Test
